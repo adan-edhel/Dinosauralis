@@ -25,51 +25,39 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             gameObject.transform.Translate(Vector3.up * Speed);
-            _SprRenderer.sprite = UpSpr;
-            _SprRenderer.flipY = false;
+           // _SprRenderer.sprite = UpSpr;
+           // _SprRenderer.flipY = false;
             DirectionY = true;
-            if (_Animator.GetBool("IsWalking") == false)
-            {
-                _Animator.SetBool("IsWalking", true);
-            }
+            _Animator.SetBool("WalkUp", true);
         }
         if (Input.GetKey(KeyCode.A))
         {
             gameObject.transform.Translate(Vector3.right * -Speed);
-            _SprRenderer.sprite = LeftSpr;
-            _SprRenderer.flipX = false;
+            //_SprRenderer.sprite = LeftSpr;
+            //_SprRenderer.flipX = false;
             DirectionX = true;
-            if (_Animator.GetBool("IsWalking") == false)
-            {
-                _Animator.SetBool("IsWalking", true);
-            }
+
+            _Animator.SetBool("WalkRight", false);
         }
         if (Input.GetKey(KeyCode.S))
         {
             gameObject.transform.Translate(Vector3.up * -Speed);
-            _SprRenderer.sprite = UpSpr;
-            _SprRenderer.flipY = true;
+            //_SprRenderer.sprite = UpSpr;
+            //_SprRenderer.flipY = true;
             DirectionY = false;
-            if (_Animator.GetBool("IsWalking") == false)
-            {
-                _Animator.SetBool("IsWalking", true);
-            }
+            _Animator.SetBool("WalkUp", false);
         }
         if (Input.GetKey(KeyCode.D))
         {
             gameObject.transform.Translate(Vector3.right * Speed);
-            _SprRenderer.sprite = LeftSpr;
-            _SprRenderer.flipX = true;
+            //_SprRenderer.sprite = LeftSpr;
+            //_SprRenderer.flipX = true;
             DirectionX = false;
-            if (_Animator.GetBool("IsWalking") == false)
-            {
-                _Animator.SetBool("IsWalking", true);
-            }
+            _Animator.SetBool("WalkRight", true);
         }
         if (_Rb.velocity.magnitude < 1f)
         {
             print("I WANT TO IDLE");
-            _Animator.SetBool("IsWalking", false);
             _Animator.SetBool("IsIdle", true);
         }
 
