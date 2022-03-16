@@ -8,9 +8,11 @@ public class PlayerStats : MonoBehaviour
     public int P_Health, P_Hunger, MaxHP, MaxHung;
     public float FoodTime;
     [SerializeField] TextMeshProUGUI HPUI, HungerUI;
+    GameManager _GameManager;
 
     void Start()
     {
+        _GameManager = FindObjectOfType<GameManager>().GetComponent<GameManager>();
         MaxHP = P_Health;
         MaxHung = P_Hunger;
         HPUI.text = P_Health.ToString();
@@ -48,6 +50,7 @@ public class PlayerStats : MonoBehaviour
         if (P_Health <= 0)
         {
             P_Health = 0;
+            _GameManager.TitleScreen();
             //DEATH
         }
         UpdateUI();
@@ -55,6 +58,7 @@ public class PlayerStats : MonoBehaviour
     public void FillHunger(int Amount)
     {
         P_Hunger += Amount;
+        P_Health += 10;
         if (P_Hunger >= MaxHung)
         {
             P_Hunger = MaxHung;
