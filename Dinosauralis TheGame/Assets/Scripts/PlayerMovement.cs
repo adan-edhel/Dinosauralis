@@ -1,0 +1,77 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Animations;
+
+public class PlayerMovement : MonoBehaviour
+{
+    [SerializeField] float Speed;
+    [SerializeField] Sprite LeftSpr, UpSpr, DownSpr;
+    private bool DirectionX, DirectionY;
+    SpriteRenderer _SprRenderer;
+    Animator _Animator;
+    Rigidbody2D _Rb;
+
+    void Start()
+    {
+        _SprRenderer = GetComponent<SpriteRenderer>();
+        _Animator = GetComponent<Animator>();
+        _Rb = GetComponent<Rigidbody2D>();
+    }
+
+   
+    void FixedUpdate()
+    {
+        if (Input.GetKey(KeyCode.W))
+        {
+            gameObject.transform.Translate(Vector3.up * Speed);
+            _SprRenderer.sprite = UpSpr;
+            _SprRenderer.flipY = false;
+            DirectionY = true;
+            if (_Animator.GetBool("IsWalking") == false)
+            {
+                _Animator.SetBool("IsWalking", true);
+            }
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            gameObject.transform.Translate(Vector3.right * -Speed);
+            _SprRenderer.sprite = LeftSpr;
+            _SprRenderer.flipX = false;
+            DirectionX = true;
+            if (_Animator.GetBool("IsWalking") == false)
+            {
+                _Animator.SetBool("IsWalking", true);
+            }
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            gameObject.transform.Translate(Vector3.up * -Speed);
+            _SprRenderer.sprite = UpSpr;
+            _SprRenderer.flipY = true;
+            DirectionY = false;
+            if (_Animator.GetBool("IsWalking") == false)
+            {
+                _Animator.SetBool("IsWalking", true);
+            }
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            gameObject.transform.Translate(Vector3.right * Speed);
+            _SprRenderer.sprite = LeftSpr;
+            _SprRenderer.flipX = true;
+            DirectionX = false;
+            if (_Animator.GetBool("IsWalking") == false)
+            {
+                _Animator.SetBool("IsWalking", true);
+            }
+        }
+        if (_Rb.velocity.magnitude < 1f)
+        {
+            print("I WANT TO IDLE");
+            _Animator.SetBool("IsWalking", false);
+            _Animator.SetBool("IsIdle", true);
+        }
+
+    }
+}
