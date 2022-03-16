@@ -331,7 +331,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Hunger
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -416,11 +416,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1551477792}
   - component: {fileID: 1551477791}
-  - component: {fileID: 1551477790}
   - component: {fileID: 1551477794}
   - component: {fileID: 1551477793}
   - component: {fileID: 1551477795}
   - component: {fileID: 1551477796}
+  - component: {fileID: 1551477790}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -437,13 +437,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1551477789}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecf1c6a2fe194404a9612aa21ca0cbdf, type: 3}
+  m_Script: {fileID: 11500000, guid: fe70e8b20c212f148b8903280fe6a260, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 0.05
-  LeftSpr: {fileID: 21300000, guid: d8c00396d8fc3f240bea641f7f0ea2d0, type: 3}
-  UpSpr: {fileID: 21300000, guid: 8a7b1487c74251d4580fb23ad31bda9c, type: 3}
-  DownSpr: {fileID: 0}
+  P_Health: 100
+  P_Hunger: 100
+  MaxHP: 100
+  MaxHung: 100
+  FoodTime: 2
+  HPUI: {fileID: 1623528021}
+  HungerUI: {fileID: 1203345604}
 --- !u!212 &1551477791
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -585,16 +588,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1551477789}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f939f32f27aefc499434764e7186a51, type: 3}
+  m_Script: {fileID: 11500000, guid: 01958757796d847409208fc06b790184, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  P_Health: 100
-  P_Hunger: 100
-  MaxHP: 0
-  MaxHung: 0
-  FoodTime: 3
-  HPUI: {fileID: 1623528021}
-  HungerUI: {fileID: 1203345604}
+  Speed: 0.3
+  LeftSpr: {fileID: 21300000, guid: be78727643fd8344bb1ede2ecfa59a12, type: 3}
+  UpSpr: {fileID: 21300000, guid: e23b298dfa2981f4587f32aed2b5918c, type: 3}
+  DownSpr: {fileID: 21300000, guid: 11d5fce8ab1c4da499ec2d0731e11733, type: 3}
 --- !u!1 &1623528019
 GameObject:
   m_ObjectHideFlags: 0
@@ -654,7 +654,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Health
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
