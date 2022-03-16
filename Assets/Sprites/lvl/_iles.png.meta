@@ -1,0 +1,1114 @@
+fileFormatVersion: 2
+guid: 25489a3ecb0fb5249a42a7ca3d005d8b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8847452972208251017
+    second: _iles_0
+  - first:
+      213: 6316949975808742170
+    second: _iles_1
+  - first:
+      213: 8928508882668923317
+    second: _iles_2
+  - first:
+      213: 2974088249187476565
+    second: _iles_3
+  - first:
+      213: 6958292526324027761
+    second: _iles_4
+  - first:
+      213: -4597275897413558968
+    second: _iles_5
+  - first:
+      213: -4548066396824705333
+    second: _iles_6
+  - first:
+      213: 8528526221730888584
+    second: _iles_7
+  - first:
+      213: -8017344031190677208
+    second: _iles_8
+  - first:
+      213: -2275449828717006474
+    second: _iles_9
+  - first:
+      213: 5357547253451948068
+    second: _iles_10
+  - first:
+      213: -6143320442933244370
+    second: _iles_11
+  - first:
+      213: 6367497058751326809
+    second: _iles_12
+  - first:
+      213: 7433300741828617193
+    second: _iles_13
+  - first:
+      213: 4445462369869294683
+    second: _iles_14
+  - first:
+      213: -2412241302368149911
+    second: _iles_15
+  - first:
+      213: 8212208181926099351
+    second: _iles_16
+  - first:
+      213: 6065498373828682091
+    second: _iles_17
+  - first:
+      213: -5131911103431205379
+    second: _iles_18
+  - first:
+      213: -8055803909636075022
+    second: _iles_19
+  - first:
+      213: -1975503248849907937
+    second: _iles_20
+  - first:
+      213: 6546649930458214114
+    second: _iles_21
+  - first:
+      213: -768242933511381992
+    second: _iles_22
+  - first:
+      213: -1083581373172580886
+    second: _iles_23
+  - first:
+      213: -7095203553825514081
+    second: _iles_24
+  - first:
+      213: -7999082737782049237
+    second: _iles_25
+  - first:
+      213: -2731979621072244477
+    second: _iles_26
+  - first:
+      213: 5844181206428086121
+    second: _iles_27
+  - first:
+      213: -3727196219898526447
+    second: _iles_28
+  - first:
+      213: 6083251267557393649
+    second: _iles_29
+  - first:
+      213: -5270835476417983822
+    second: _iles_30
+  - first:
+      213: 3669249553258148833
+    second: _iles_31
+  - first:
+      213: 6381165190868041560
+    second: _iles_32
+  - first:
+      213: -5614331015555539955
+    second: _iles_33
+  - first:
+      213: 6898364885111776235
+    second: _iles_34
+  - first:
+      213: -184427064088457010
+    second: _iles_35
+  - first:
+      213: -4734612056925814265
+    second: _iles_36
+  - first:
+      213: -6516041122387504765
+    second: _iles_37
+  - first:
+      213: 1577986747360366796
+    second: _iles_38
+  - first:
+      213: -371909966890510732
+    second: _iles_39
+  - first:
+      213: -533584338653612721
+    second: _iles_40
+  - first:
+      213: 4440428914343565029
+    second: _iles_41
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: _iles_0
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 237
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98062773a9778ca70800000000000000
+      internalID: 8847452972208251017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_1
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 237
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a131efbc8805aa750800000000000000
+      internalID: 6316949975808742170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 204
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b9a665068f68eb70800000000000000
+      internalID: 8928508882668923317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_3
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 204
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 554ab775185164920800000000000000
+      internalID: 2974088249187476565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_4
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 204
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1719cc2af22d09060800000000000000
+      internalID: 6958292526324027761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_5
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 204
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d1330cde13330c0800000000000000
+      internalID: -4597275897413558968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_6
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 204
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc66f5275b502e0c0800000000000000
+      internalID: -4548066396824705333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_7
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 204
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88bbfdf99696b5670800000000000000
+      internalID: 8528526221730888584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_8
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 171
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82908c2d41cacb090800000000000000
+      internalID: -8017344031190677208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_9
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 171
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6717917cf6afb60e0800000000000000
+      internalID: -2275449828717006474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_10
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 171
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4208f5d67d4d95a40800000000000000
+      internalID: 5357547253451948068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_11
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 171
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e81991b9a8ebaa0800000000000000
+      internalID: -6143320442933244370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_12
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 171
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95aa737a6d4ed5850800000000000000
+      internalID: 6367497058751326809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_13
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 171
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e3a75134a3682760800000000000000
+      internalID: 7433300741828617193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_14
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 138
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5cec6ae87471bd30800000000000000
+      internalID: 4445462369869294683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_15
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 138
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96e12dbe05ff58ed0800000000000000
+      internalID: -2412241302368149911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_16
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 138
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 799f241d4df97f170800000000000000
+      internalID: 8212208181926099351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_17
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 138
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61a4c572aafc2450800000000000000
+      internalID: 6065498373828682091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_18
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 138
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfd991d9a0ac7c8b0800000000000000
+      internalID: -5131911103431205379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_19
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 138
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f150f19609043090800000000000000
+      internalID: -8055803909636075022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_20
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 138
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1fcba7034a9594e0800000000000000
+      internalID: -1975503248849907937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_21
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 138
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ee2cc51d6f5ada50800000000000000
+      internalID: 6546649930458214114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_22
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 105
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c99de4f17a655f0800000000000000
+      internalID: -768242933511381992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_23
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 105
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aed71de6b7856f0f0800000000000000
+      internalID: -1083581373172580886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_24
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 105
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9d1425b5f5c88d90800000000000000
+      internalID: -7095203553825514081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_25
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 105
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b26ba8581ac8df090800000000000000
+      internalID: -7999082737782049237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_26
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 105
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 301f160620f061ad0800000000000000
+      internalID: -2731979621072244477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_27
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 105
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96fe82ce7d3ba1150800000000000000
+      internalID: 5844181206428086121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_28
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 72
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11505c819c6564cc0800000000000000
+      internalID: -3727196219898526447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_29
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 72
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f404322ccc0c6450800000000000000
+      internalID: 6083251267557393649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_30
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 72
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ba449e6f0b3ad6b0800000000000000
+      internalID: -5270835476417983822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_31
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 72
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e37636370bcbe230800000000000000
+      internalID: 3669249553258148833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_32
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 72
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ff6c6aee37e8850800000000000000
+      internalID: 6381165190868041560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_33
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 73
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0c9a56ffa3e512b0800000000000000
+      internalID: -5614331015555539955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_34
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 73
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be3ad1c505aebbf50800000000000000
+      internalID: 6898364885111776235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_35
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec01a06ff88c07df0800000000000000
+      internalID: -184427064088457010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_36
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 702c7a55b674b4eb0800000000000000
+      internalID: -4734612056925814265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_37
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38151466f1f5295a0800000000000000
+      internalID: -6516041122387504765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_38
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc050b0169226e510800000000000000
+      internalID: 1577986747360366796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_39
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 40
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47650170bd5b6daf0800000000000000
+      internalID: -371909966890510732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_40
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 40
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f45f6dcfed35898f0800000000000000
+      internalID: -533584338653612721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _iles_41
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 6
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e652d932929f9d30800000000000000
+      internalID: 4440428914343565029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
