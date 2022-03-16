@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
             //_SprRenderer.flipX = false;
             DirectionX = true;
 
-            _Animator.SetBool("WalkRight", false);
+            _Animator.SetBool("WalkLeft", true);
         }
         if (Input.GetKey(KeyCode.S))
         {
@@ -45,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
             //_SprRenderer.sprite = UpSpr;
             //_SprRenderer.flipY = true;
             DirectionY = false;
-            _Animator.SetBool("WalkUp", false);
+            _Animator.SetBool("WalkDown", true);
         }
         if (Input.GetKey(KeyCode.D))
         {
@@ -55,7 +55,7 @@ public class PlayerMovement : MonoBehaviour
             DirectionX = false;
             _Animator.SetBool("WalkRight", true);
         }
-        if (_Rb.velocity.magnitude < 1f)
+        if (_Rb.velocity.magnitude < 0.5f)
         {
             print("I WANT TO IDLE");
             _Animator.SetBool("IsIdle", true);
