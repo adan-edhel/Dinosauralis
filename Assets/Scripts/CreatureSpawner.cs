@@ -15,6 +15,7 @@ public class CreatureSpawner : MonoBehaviour
     private void Start()
     {
         spawnCounter = spawnInterval;
+        GetComponent<SpriteRenderer>().enabled = false;
     }
 
     void Update()

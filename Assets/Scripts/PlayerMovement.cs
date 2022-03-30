@@ -5,7 +5,7 @@ using UnityEngine.Animations;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] float Speed;
+    [SerializeField] float Speed = .05f;
     [SerializeField] GameObject BiteBox;
     SpriteRenderer _SprRenderer;
     Animator _Animator;
@@ -22,8 +22,27 @@ public class PlayerMovement : MonoBehaviour
         BiteBox.SetActive(false);
     }
 
-   
-    void Update()
+    private void Update()
+    {
+        InputHandler();
+    }
+
+    void FixedUpdate()
+    {
+        lastPosition = this.transform.position;
+        if (lastPosition != firstPosition)
+        {
+            isMoving = true;
+        }
+        else
+        {
+            isMoving = false;
+            _Animator.SetInteger("AnimDir", 0);
+        }
+        firstPosition = lastPosition;
+    }
+
+    private void InputHandler()
     {
         if (Input.GetKey(KeyCode.W))
         {
@@ -54,24 +73,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isBiting == false)
         {
             StartCoroutine(BiteTimer());
-            
         }
-
-    }
-    void FixedUpdate()
-    {
-        lastPosition = this.transform.position;
-        if (lastPosition != firstPosition)
-        {
-            isMoving = true;
-        }
-        else
-        {
-            isMoving = false;
-            _Animator.SetInteger("AnimDir", 0);
-        }
-        print(isMoving);
-        firstPosition = lastPosition;
     }
 
     IEnumerator BiteTimer()
