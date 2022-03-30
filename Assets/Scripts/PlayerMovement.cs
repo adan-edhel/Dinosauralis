@@ -6,60 +6,80 @@ using UnityEngine.Animations;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] float Speed;
-    [SerializeField] Sprite LeftSpr, UpSpr, DownSpr;
-    private bool DirectionX, DirectionY;
+    [SerializeField] GameObject BiteBox;
     SpriteRenderer _SprRenderer;
     Animator _Animator;
     Rigidbody2D _Rb;
+    Vector3 firstPosition, lastPosition;
+    bool isMoving, isBiting;
 
     void Start()
     {
         _SprRenderer = GetComponent<SpriteRenderer>();
         _Animator = GetComponent<Animator>();
         _Rb = GetComponent<Rigidbody2D>();
+        firstPosition = this.transform.position;
+        BiteBox.SetActive(false);
     }
 
    
-    void FixedUpdate()
+    void Update()
     {
         if (Input.GetKey(KeyCode.W))
         {
             gameObject.transform.Translate(Vector3.up * Speed);
-           // _SprRenderer.sprite = UpSpr;
-           // _SprRenderer.flipY = false;
-            DirectionY = true;
-            _Animator.SetBool("WalkUp", true);
+            BiteBox.transform.localPosition = new Vector3(0, 0.4f, transform.localPosition.z);
+            _Animator.SetInteger("AnimDir", 1);
         }
         if (Input.GetKey(KeyCode.A))
         {
             gameObject.transform.Translate(Vector3.right * -Speed);
-            //_SprRenderer.sprite = LeftSpr;
-            //_SprRenderer.flipX = false;
-            DirectionX = true;
-
-            _Animator.SetBool("WalkLeft", true);
+            BiteBox.transform.localPosition = new Vector3(-0.75f, 0, transform.localPosition.z);
+            _SprRenderer.flipX = false;
+            _Animator.SetInteger("AnimDir", 3);
         }
         if (Input.GetKey(KeyCode.S))
         {
             gameObject.transform.Translate(Vector3.up * -Speed);
-            //_SprRenderer.sprite = UpSpr;
-            //_SprRenderer.flipY = true;
-            DirectionY = false;
-            _Animator.SetBool("WalkDown", true);
+            BiteBox.transform.localPosition = new Vector3(0, -0.4f, transform.localPosition.z);
+            _Animator.SetInteger("AnimDir", 2);
         }
         if (Input.GetKey(KeyCode.D))
         {
             gameObject.transform.Translate(Vector3.right * Speed);
-            //_SprRenderer.sprite = LeftSpr;
-            //_SprRenderer.flipX = true;
-            DirectionX = false;
-            _Animator.SetBool("WalkRight", true);
+            BiteBox.transform.localPosition = new Vector3(0.75f, 0, transform.localPosition.z);
+            _SprRenderer.flipX = true;
+            _Animator.SetInteger("AnimDir", 4);
         }
-        if (_Rb.velocity.magnitude < 0.5f)
+        if (Input.GetKeyDown(KeyCode.Space) && isBiting == false)
         {
-            print("I WANT TO IDLE");
-            _Animator.SetBool("IsIdle", true);
+            StartCoroutine(BiteTimer());
+            
         }
 
+    }
+    void FixedUpdate()
+    {
+        lastPosition = this.transform.position;
+        if (lastPosition != firstPosition)
+        {
+            isMoving = true;
+        }
+        else
+        {
+            isMoving = false;
+            _Animator.SetInteger("AnimDir", 0);
+        }
+        print(isMoving);
+        firstPosition = lastPosition;
+    }
+
+    IEnumerator BiteTimer()
+    {
+        isBiting = true;
+        BiteBox.SetActive(true);
+        yield return new WaitForSeconds(1);
+        BiteBox.SetActive(false);
+        isBiting = false;
     }
 }
