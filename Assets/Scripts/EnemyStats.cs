@@ -8,8 +8,11 @@ public class EnemyStats : MonoBehaviour
     [SerializeField] GameObject _Corpse;
     GameObject _Player;
 
+    public CreatureSpawner spawner;
+
     void Start()
     {
+        spawner.RegisterDinosaur(this);
         _Player = FindObjectOfType<PlayerStats>().gameObject;
     }
 
@@ -20,6 +23,17 @@ public class EnemyStats : MonoBehaviour
             E_TakeDamage(25);
         }
     }
+
+    private void OnMouseDown()
+    {
+        Destroy(gameObject);
+    }
+
+    private void OnDestroy()
+    {
+        spawner.RegisterDinosaur(this);
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject == _Player)
@@ -27,7 +41,7 @@ public class EnemyStats : MonoBehaviour
             PlayerStats P_Stats = _Player.GetComponent<PlayerStats>();
             P_Stats.TakeDamage(E_Damage);
         }
-        
+
     }
 
     public void E_TakeDamage(int Damage)
