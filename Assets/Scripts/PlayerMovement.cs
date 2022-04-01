@@ -22,13 +22,10 @@ public class PlayerMovement : MonoBehaviour
         BiteBox.SetActive(false);
     }
 
-    private void Update()
-    {
-        InputHandler();
-    }
-
     void FixedUpdate()
     {
+        InputHandler();
+
         lastPosition = this.transform.position;
         if (lastPosition != firstPosition)
         {
