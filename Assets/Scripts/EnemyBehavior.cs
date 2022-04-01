@@ -14,7 +14,8 @@ public class EnemyBehavior : MonoBehaviour
 
     private Directions direction = Directions.Up;
 
-    [SerializeField] private float movementSpeed = .05f;
+    [SerializeField] private float movementSpeed = 3f;
+    private float speedMofidier = 100;
 
     [SerializeField] private Vector2 directionIntervalRange = new Vector2(3, 5);
     private float directionInterval;
@@ -27,14 +28,17 @@ public class EnemyBehavior : MonoBehaviour
 
     void Update()
     {
-        Movement();
-
         directionCounter += Time.deltaTime;
         if (directionCounter > directionInterval)
         {
             ChangeDirection();
             directionCounter = 0;
         }
+    }
+
+    private void FixedUpdate()
+    {
+        Movement();
     }
 
     private void ChangeDirection()
@@ -55,17 +59,17 @@ public class EnemyBehavior : MonoBehaviour
         switch (direction)
         {
             case Directions.Up:
-                gameObject.transform.Translate(Vector3.up * movementSpeed);
+                gameObject.transform.Translate(Vector3.up * movementSpeed / speedMofidier);
                 break;
             case Directions.Down:
-                gameObject.transform.Translate(Vector3.down * movementSpeed);
+                gameObject.transform.Translate(Vector3.down * movementSpeed / speedMofidier);
                 break;
             case Directions.Left:
-                gameObject.transform.Translate(Vector3.left * movementSpeed);
+                gameObject.transform.Translate(Vector3.left * movementSpeed / speedMofidier);
                 GetComponent<SpriteRenderer>().flipX = false;
                 break;
             case Directions.Right:
-                gameObject.transform.Translate(Vector3.right * movementSpeed);
+                gameObject.transform.Translate(Vector3.right * movementSpeed / speedMofidier);
                 GetComponent<SpriteRenderer>().flipX = true;
                 break;
             default:
