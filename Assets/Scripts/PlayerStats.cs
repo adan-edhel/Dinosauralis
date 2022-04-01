@@ -19,23 +19,6 @@ public class PlayerStats : MonoBehaviour
         StartCoroutine(HungerTimer());
     }
 
-    public void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.M))
-        {
-            TakeDamage(3);
-
-        }
-        if (Input.GetKeyDown(KeyCode.N))
-        {
-            FillHunger(5);
-        }
-        if (Input.GetKeyDown(KeyCode.B))
-        {
-            P_Hunger -= 10;
-            UpdateUI();
-        }
-    }
 
     public void UpdateUI()
     {
