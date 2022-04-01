@@ -8,9 +8,12 @@ public class EnemyCollision : MonoBehaviour
     [SerializeField] GameObject _Corpse;
     PlayerStats player;
 
+    private AudioSource bite;
+
     private void Start()
     {
         player = FindObjectOfType<PlayerStats>();
+        bite = GetComponent<AudioSource>();
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
@@ -18,12 +21,14 @@ public class EnemyCollision : MonoBehaviour
         if (collision.gameObject.tag == "BiteTag")
         {
             E_TakeDamage(25);
+            bite.Play();
             collision.gameObject.SetActive(false);
         }
 
         if (collision.gameObject == player.gameObject)
         {
             player.TakeDamage(E_Damage);
+            bite.Play();
         }
     }
 

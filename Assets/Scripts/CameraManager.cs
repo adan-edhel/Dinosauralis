@@ -17,6 +17,11 @@ public class CameraManager : MonoBehaviour
         VC = GetComponentInChildren<CinemachineVirtualCamera>();
     }
 
+    private void Start()
+    {
+        VC.Follow = FindObjectOfType<PlayerStats>().transform;
+    }
+
     private void Update()
     {
         if (VC.m_Lens.OrthographicSize < targetOrthographicSize)
