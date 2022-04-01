@@ -22,6 +22,14 @@ public class PlayerMovement : MonoBehaviour
         BiteBox.SetActive(false);
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && isBiting == false)
+        {
+            StartCoroutine(BiteTimer());
+        }
+    }
+
     void FixedUpdate()
     {
         InputHandler();
@@ -44,32 +52,28 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             gameObject.transform.Translate(Vector3.up * Speed);
-            BiteBox.transform.localPosition = new Vector3(0, 0.4f, transform.localPosition.z);
+            BiteBox.transform.localPosition = new Vector3(0, 0.8f, transform.localPosition.z);
             _Animator.SetInteger("AnimDir", 1);
         }
         if (Input.GetKey(KeyCode.A))
         {
             gameObject.transform.Translate(Vector3.right * -Speed);
-            BiteBox.transform.localPosition = new Vector3(-0.75f, 0, transform.localPosition.z);
+            BiteBox.transform.localPosition = new Vector3(-1.25f, 0, transform.localPosition.z);
             _SprRenderer.flipX = false;
             _Animator.SetInteger("AnimDir", 3);
         }
         if (Input.GetKey(KeyCode.S))
         {
             gameObject.transform.Translate(Vector3.up * -Speed);
-            BiteBox.transform.localPosition = new Vector3(0, -0.4f, transform.localPosition.z);
+            BiteBox.transform.localPosition = new Vector3(0, -0.8f, transform.localPosition.z);
             _Animator.SetInteger("AnimDir", 2);
         }
         if (Input.GetKey(KeyCode.D))
         {
             gameObject.transform.Translate(Vector3.right * Speed);
-            BiteBox.transform.localPosition = new Vector3(0.75f, 0, transform.localPosition.z);
+            BiteBox.transform.localPosition = new Vector3(1.25f, 0, transform.localPosition.z);
             _SprRenderer.flipX = true;
             _Animator.SetInteger("AnimDir", 4);
-        }
-        if (Input.GetKeyDown(KeyCode.Space) && isBiting == false)
-        {
-            StartCoroutine(BiteTimer());
         }
     }
 

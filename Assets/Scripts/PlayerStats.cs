@@ -54,6 +54,9 @@ public class PlayerStats : MonoBehaviour
             //DEATH
         }
         UpdateUI();
+
+        GetComponent<Animator>().SetBool("Hurt", true);
+        Invoke("ResetHurt", .1f);
     }
     public void FillHunger(int Amount)
     {
@@ -64,8 +67,18 @@ public class PlayerStats : MonoBehaviour
             P_Hunger = MaxHung;
         }
         UpdateUI();
+
+        transform.localScale += new Vector3(.1f, .1f, 0);
+
+        if (transform.localScale.x < 2)
+        {
+        }
     }
 
+    private void ResetHurt()
+    {
+        GetComponent<Animator>().SetBool("Hurt", false);
+    }
 
     public IEnumerator HungerTimer()
     {

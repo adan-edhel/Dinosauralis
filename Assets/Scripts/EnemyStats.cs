@@ -49,6 +49,7 @@ public class EnemyStats : MonoBehaviour
             SpawnCorpse();
         }
     }
+
     public void SpawnCorpse()
     {
         GameObject CurrentCorpse = Instantiate(_Corpse);
