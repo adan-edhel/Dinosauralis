@@ -54,6 +54,9 @@ public class EnemyCollision : MonoBehaviour
     {
         GameObject CurrentCorpse = Instantiate(_Corpse);
         CurrentCorpse.transform.position = gameObject.transform.position;
-        Destroy(transform.parent.gameObject);
+
+        transform.parent.GetComponent<SpriteRenderer>().enabled = false;
+        GetComponent<Collider2D>().enabled = false;
+        Destroy(transform.parent.gameObject, 1f);
     }
 }

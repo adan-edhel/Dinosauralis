@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CreatureSpawner : MonoBehaviour
 {
+    private PlayerStats player;
+
     [SerializeField] GameObject dinosaurPrefab;
     [SerializeField] private float spawnRadius = 3;
     [SerializeField] private int maxDinoAmount = 5;
@@ -15,6 +17,7 @@ public class CreatureSpawner : MonoBehaviour
     private void Start()
     {
         spawnCounter = spawnInterval;
+        player = FindObjectOfType<PlayerStats>();
         GetComponent<SpriteRenderer>().enabled = false;
     }
 
@@ -32,6 +35,9 @@ public class CreatureSpawner : MonoBehaviour
     {
         if (dinosaurList.Count < maxDinoAmount)
         {
+            float distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
+            if (distanceToPlayer < spawnRadius) return;
+
             Vector3 spawnPoint = Vector3.zero;
             int amountToSpawn = maxDinoAmount - dinosaurList.Count;
             for (int i = 0; i < amountToSpawn; i++)
@@ -73,7 +79,7 @@ public class CreatureSpawner : MonoBehaviour
         Invoke("SpawnDinosaurs", .4f);
     }
 
-    private void OnDrawGizmosSelected()
+    private void OnDrawGizmos()
     {
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(transform.position, spawnRadius);

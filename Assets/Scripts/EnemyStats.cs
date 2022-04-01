@@ -11,15 +11,8 @@ public class EnemyStats : MonoBehaviour
         spawner.RegisterDinosaur(this);
     }
 
-    private void OnMouseDown()
-    {
-        Destroy(gameObject);
-    }
-
     private void OnDestroy()
     {
         spawner.RegisterDinosaur(this);
     }
-
-
 }
