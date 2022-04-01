@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyStats : MonoBehaviour
 {
-    [SerializeField] int E_Health, E_Damage;
+    [SerializeField] float E_Health, E_Damage;
     [SerializeField] GameObject _Corpse;
     GameObject _Player;
 

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CorpseScript : MonoBehaviour
 {
-    public int fillAmount = 20;
+    public float fillAmount = 20;
     PlayerStats _Player;
     void Start()
     {

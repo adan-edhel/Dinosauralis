@@ -5,7 +5,7 @@ using TMPro;
 
 public class PlayerStats : MonoBehaviour
 {
-    public int P_Health, P_Hunger, MaxHP, MaxHung;
+    public float P_Health, P_Hunger, MaxHP, MaxHung;
     public float FoodTime;
     [SerializeField] TextMeshProUGUI HPUI, HungerUI;
     GameManager _GameManager;
@@ -44,7 +44,7 @@ public class PlayerStats : MonoBehaviour
         HungerUI.text = P_Hunger.ToString();
     }
 
-    public void TakeDamage(int Damage)
+    public void TakeDamage(float Damage)
     {
         P_Health -= Damage;
         if (P_Health <= 0)
@@ -58,10 +58,11 @@ public class PlayerStats : MonoBehaviour
         GetComponent<Animator>().SetBool("Hurt", true);
         Invoke("ResetHurt", .1f);
     }
-    public void FillHunger(int Amount)
+    public void FillHunger(float Amount)
     {
-        P_Hunger += Amount;
-        P_Health += 10;
+       float FoodMod = transform.localScale.x;
+        P_Hunger += Amount - (FoodMod * 5);
+        P_Health += 20;
         if (P_Hunger >= MaxHung)
         {
             P_Hunger = MaxHung;
@@ -72,6 +73,7 @@ public class PlayerStats : MonoBehaviour
 
         if (transform.localScale.x < 2)
         {
+
         }
     }
 
