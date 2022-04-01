@@ -62,11 +62,11 @@ public class EnemyBehavior : MonoBehaviour
                 break;
             case Directions.Left:
                 gameObject.transform.Translate(Vector3.left * movementSpeed);
-                GetComponent<SpriteRenderer>().flipX = false;
+                GetComponent<SpriteRenderer>().flipX = true;
                 break;
             case Directions.Right:
                 gameObject.transform.Translate(Vector3.right * movementSpeed);
-                GetComponent<SpriteRenderer>().flipX = true;
+                GetComponent<SpriteRenderer>().flipX = false;
                 break;
             default:
                 break;
