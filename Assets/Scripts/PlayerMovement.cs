@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && isBiting == false)
+        if (Input.GetKeyDown(KeyCode.Space) && !BiteBox.activeSelf)
         {
             StartCoroutine(BiteTimer());
         }
@@ -82,10 +82,8 @@ public class PlayerMovement : MonoBehaviour
 
     IEnumerator BiteTimer()
     {
-        isBiting = true;
         BiteBox.SetActive(true);
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(.5f);
         BiteBox.SetActive(false);
-        isBiting = false;
     }
 }

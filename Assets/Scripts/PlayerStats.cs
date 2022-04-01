@@ -12,7 +12,7 @@ public class PlayerStats : MonoBehaviour
 
     void Start()
     {
-        _GameManager = FindObjectOfType<GameManager>().GetComponent<GameManager>();
+        _GameManager = FindObjectOfType<GameManager>()?.GetComponent<GameManager>();
         MaxHP = P_Health;
         MaxHung = P_Hunger;
         HPUI.text = P_Health.ToString();
@@ -50,7 +50,7 @@ public class PlayerStats : MonoBehaviour
         if (P_Health <= 0)
         {
             P_Health = 0;
-            _GameManager.TitleScreen();
+            _GameManager?.TitleScreen();
             //DEATH
         }
         UpdateUI();
