@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class PlayerStats : MonoBehaviour
 {
-    public float P_Health, P_Hunger, MaxHP, MaxHung;
+    public float P_Health, P_Hunger, MaxHP = 100, MaxHung = 100;
     public float FoodTime;
-    [SerializeField] TextMeshProUGUI HPUI, HungerUI;
+    [SerializeField] Image HPBar, HungBar;
     GameManager _GameManager;
 
     void Start()
@@ -15,8 +16,6 @@ public class PlayerStats : MonoBehaviour
         _GameManager = FindObjectOfType<GameManager>()?.GetComponent<GameManager>();
         MaxHP = P_Health;
         MaxHung = P_Hunger;
-        HPUI.text = P_Health.ToString();
-        HungerUI.text = P_Hunger.ToString();
         StartCoroutine(HungerTimer());
     }
 
@@ -40,8 +39,8 @@ public class PlayerStats : MonoBehaviour
 
     public void UpdateUI()
     {
-        HPUI.text = P_Health.ToString();
-        HungerUI.text = P_Hunger.ToString();
+        HPBar.fillAmount = P_Health / 100;
+        HungBar.fillAmount = P_Hunger / 100;
     }
 
     public void TakeDamage(float Damage)
@@ -63,6 +62,10 @@ public class PlayerStats : MonoBehaviour
        float FoodMod = transform.localScale.x;
         P_Hunger += Amount - (FoodMod * 5);
         P_Health += 20;
+        if (P_Health > MaxHP)
+        {
+            P_Health = MaxHP;
+        }
         if (P_Hunger >= MaxHung)
         {
             P_Hunger = MaxHung;
