@@ -5,17 +5,20 @@ using UnityEngine.Animations;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] float Speed = .05f;
-    [SerializeField] GameObject BiteBox;
+    [SerializeField] float Speed = 5f;
+    GameObject BiteBox;
     SpriteRenderer _SprRenderer;
     Animator _Animator;
     Rigidbody2D _Rb;
     Vector3 firstPosition, lastPosition;
     bool isMoving, isBiting;
 
+    private float speedModifier = 100f;
+
     void Start()
     {
         _SprRenderer = GetComponent<SpriteRenderer>();
+        BiteBox = transform.GetChild(0).gameObject;
         _Animator = GetComponent<Animator>();
         _Rb = GetComponent<Rigidbody2D>();
         firstPosition = this.transform.position;
@@ -51,26 +54,26 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W))
         {
-            gameObject.transform.Translate(Vector3.up * Speed);
+            gameObject.transform.Translate(Vector3.up * Speed / speedModifier);
             BiteBox.transform.localPosition = new Vector3(0, 0.8f, transform.localPosition.z);
             _Animator.SetInteger("AnimDir", 1);
         }
         if (Input.GetKey(KeyCode.A))
         {
-            gameObject.transform.Translate(Vector3.right * -Speed);
+            gameObject.transform.Translate(Vector3.right * -Speed / speedModifier);
             BiteBox.transform.localPosition = new Vector3(-1.25f, 0, transform.localPosition.z);
             _SprRenderer.flipX = false;
             _Animator.SetInteger("AnimDir", 3);
         }
         if (Input.GetKey(KeyCode.S))
         {
-            gameObject.transform.Translate(Vector3.up * -Speed);
+            gameObject.transform.Translate(Vector3.up * -Speed / speedModifier);
             BiteBox.transform.localPosition = new Vector3(0, -0.8f, transform.localPosition.z);
             _Animator.SetInteger("AnimDir", 2);
         }
         if (Input.GetKey(KeyCode.D))
         {
-            gameObject.transform.Translate(Vector3.right * Speed);
+            gameObject.transform.Translate(Vector3.right * Speed / speedModifier);
             BiteBox.transform.localPosition = new Vector3(1.25f, 0, transform.localPosition.z);
             _SprRenderer.flipX = true;
             _Animator.SetInteger("AnimDir", 4);

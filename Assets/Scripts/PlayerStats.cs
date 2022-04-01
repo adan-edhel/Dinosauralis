@@ -69,11 +69,10 @@ public class PlayerStats : MonoBehaviour
         }
         UpdateUI();
 
-        transform.localScale += new Vector3(.1f, .1f, 0);
-
         if (transform.localScale.x < 2)
         {
-
+            transform.localScale += new Vector3(.1f, .1f, 0);
+            CameraManager.instance.ZoomOut(.2f);
         }
     }
 
