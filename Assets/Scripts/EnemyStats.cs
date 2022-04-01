@@ -22,6 +22,12 @@ public class EnemyStats : MonoBehaviour
         {
             E_TakeDamage(25);
         }
+
+        if (collision.gameObject == _Player)
+        {
+            PlayerStats P_Stats = _Player.GetComponent<PlayerStats>();
+            P_Stats.TakeDamage(E_Damage);
+        }
     }
 
     private void OnMouseDown()
@@ -32,16 +38,6 @@ public class EnemyStats : MonoBehaviour
     private void OnDestroy()
     {
         spawner.RegisterDinosaur(this);
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject == _Player)
-        {
-            PlayerStats P_Stats = _Player.GetComponent<PlayerStats>();
-            P_Stats.TakeDamage(E_Damage);
-        }
-
     }
 
     public void E_TakeDamage(int Damage)

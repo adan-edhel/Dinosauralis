@@ -40,7 +40,6 @@ public class CreatureSpawner : MonoBehaviour
                 GameObject GO = Instantiate(dinosaurPrefab, spawnPoint, Quaternion.identity);
                 GO.GetComponent<EnemyStats>().spawner = this;
             }
-            print("spawned");
         }
     }
 
