@@ -12,6 +12,14 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            TitleScreen();
+        }
+    }
+
     public void TitleScreen()
     {
         SceneManager.LoadScene(0);
